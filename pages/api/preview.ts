@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { getPreviewPost } from "../../lib/api";
 
 export default async function preview(
   req: NextApiRequest,
@@ -18,7 +17,7 @@ export default async function preview(
   }
 
   // Fetch WordPress to check if the provided `id` or `slug` exists
-  const post = await getPreviewPost(id || slug, id ? "DATABASE_ID" : "SLUG");
+  const post = {};
 
   // If the post doesn't exist prevent preview mode from being enabled
   if (!post) {
