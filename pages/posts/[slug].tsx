@@ -65,7 +65,7 @@ export const getStaticProps: GetStaticProps = async ({
   preview = false,
   previewData,
 }) => {
-  const data = {};
+  const data = {post: "xx", posts: "c"};
 
   return {
     props: {
@@ -78,7 +78,7 @@ export const getStaticProps: GetStaticProps = async ({
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const allPosts = {};
+  const allPosts = {edges:[]};
 
   return {
     paths: allPosts.edges.map(({ node }) => `/posts/${node.slug}`) || [],
