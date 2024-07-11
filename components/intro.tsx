@@ -16,7 +16,7 @@ export default function Intro() {
         </a>{" "}
         and{" "}
         <a
-          href=xxx
+          href="xxx"
           className="underline hover:text-success duration-200 transition-colors"
         >
           xx
