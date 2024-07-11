@@ -17,7 +17,7 @@ export default async function preview(
   }
 
   // Fetch WordPress to check if the provided `id` or `slug` exists
-  const post = {};
+  const post = {slug: "xx", databaseId: "xx", status: "xx"};
 
   // If the post doesn't exist prevent preview mode from being enabled
   if (!post) {
