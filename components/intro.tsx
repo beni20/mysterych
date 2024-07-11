@@ -1,4 +1,4 @@
-import { CMS_NAME, CMS_URL } from "../lib/constants";
+
 
 export default function Intro() {
   return (
@@ -16,10 +16,10 @@ export default function Intro() {
         </a>{" "}
         and{" "}
         <a
-          href={CMS_URL}
+          href=xxx
           className="underline hover:text-success duration-200 transition-colors"
         >
-          {CMS_NAME}
+          xx
         </a>
         .
       </h4>
