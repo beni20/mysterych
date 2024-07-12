@@ -14,9 +14,9 @@ export default defineConfig({
   branch,
 
   // Get this from tina.io
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || 'f922fcca-f1c4-42a7-93d5-dcaabdeaf740',
   // Get this from tina.io
-  token: process.env.TINA_TOKEN,
+  token: process.env.TINA_TOKEN || 'b37e49eaaa2bb97fe7e49a43b1c9bfc52910f386',
 
   build: {
     outputFolder: "admin",
@@ -24,7 +24,7 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "",
+      mediaRoot: "uploads",
       publicFolder: "public",
     },
   },

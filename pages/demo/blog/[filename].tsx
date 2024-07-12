@@ -38,13 +38,13 @@ const BlogPage = (props) => {
           <ContentSection content={data.post.body}></ContentSection>
         </div>
         <div className='bg-green-100 text-center'>
-          Lost and looking for a place to start?
+          Lost and looking for a place to start?xx
           <a
             href='https://tina.io/guides/tina-cloud/getting-started/overview/'
             className='text-blue-500 underline'
           >
             {' '}
-            Check out this guide
+            Check out this guidexx
           </a>{' '}
           to see how add TinaCMS to an existing Next.js site.
         </div>

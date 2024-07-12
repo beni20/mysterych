@@ -1,10 +1,4 @@
 import type { Collection } from "tinacms";
-import { heroBlockSchema } from "../../components/blocks/hero";
-import { contentBlockSchema } from "../../components/blocks/content";
-import { testimonialBlockSchema } from "../../components/blocks/testimonial";
-import { featureBlockSchema } from "../../components/blocks/features";
-import { carBlockSchema } from "../../components/blocks/car";
-import { car1BlockSchema } from "../../components/blocks/car1";
 
 const Page: Collection = {
   label: "Pages",
@@ -24,32 +18,34 @@ const Page: Collection = {
   fields: [
     {
       type: "string",
+      label: "categories",
+      name: "categories",
+      description:
+        "xxx",
+    },  
+    {
+      type: "string",
+      label: "author",
+      name: "author",
+      description:
+        "xxx",
+    },
+    {
+      type: "string",
+      label: "date",
+      name: "date",
+      description:
+        "xxx",
+    },
+    {
+      type: "string",
       label: "Title",
       name: "title",
       description:
         "The title of the page. This is used to display the title in the CMS",
       isTitle: true,
       required: true,
-    },
-    {
-      type: "object",
-      list: true,
-      name: "blocks",
-      label: "Sections",
-      ui: {
-        visualSelector: true,
-      },
-      templates: [
-        heroBlockSchema,
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
-        featureBlockSchema,
-        contentBlockSchema,
-        testimonialBlockSchema,
-		carBlockSchema,
-		car1BlockSchema
-      ],
-    },
+    }
   ],
 };
 
