@@ -2,6 +2,7 @@ import { defineConfig } from "tinacms";
 
 import Post from "./collection/post";
 import Author from "./collection/author";
+import Page from "./collection/page";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -30,6 +31,6 @@ export default defineConfig({
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
   schema: {
-    collections: [Post, Author],
+    collections: [Post, Author, Page],
   },
 });
